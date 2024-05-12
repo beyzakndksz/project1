@@ -1,0 +1,404 @@
+@import url(https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap);
+
+
+/* --FONT
+'IBM Plex Sans'
+ */
+
+*{
+    margin : 0px;
+    padding: 0px;
+    font-family: 'IBM Plex Sans';
+}
+html, body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #E5E7E9;
+}    
+.active{
+    background-color: #ADD8E6 !important;
+} 
+#sayfa{
+    width: 800px;
+    border-style: solid;
+    border-width: 1px;
+    margin: 0 auto;
+}
+
+/* banner için css kodları */
+#banner{
+    height: 120px;
+    border-style: dotted;
+    border-width: 1px;
+    display: flex;                   /*esnek düzen sağlar*/
+    justify-content: space-between;  /*öğeleri yatay eksende eşit şekilde dağıtır*/ 
+    align-items: center;             /*öğeleri ortaya hizalar*/ 
+    background-color: #CDB6B6;
+    padding: 0 20px;
+}
+#logobk{
+    width: 100px;
+    height: 85px;
+    border-style: dotted;
+    border-width: 1px;
+    background-color: whitesmoke;
+}
+    
+
+
+/* ANA MENÜ */
+#anamenu{
+    background-color: rgb(205, 182, 182);
+}
+#anamenu ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: end;    /* tüm öğeleri sağa doğru*/
+    align-items: center;
+}
+#anamenu ul li{
+    padding: 15px 0;
+    margin: 0 10px;
+    background-color: #F2F3F4;
+    border-radius: 15px;
+}
+#anamenu ul li:hover{
+    background-color: #D7DBDD;
+    cursor: pointer;  
+}
+#anamenu ul a{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 15px;
+    padding: 15px;
+}
+#anamenu ul a:link{
+    color:rgb(34, 141, 176);
+}
+
+/* İÇERİK VE YAN MENÜ KODLARI */
+#icerik{
+    display: flex;
+    justify-content: center;   /*yatay eksende her şeyi ortalar*/
+    align-items: center;       /*dikey eksende her şeyi ortalar*/
+    padding: 25px;
+    background-color: #F4F6F6;
+}
+/* logo yapma ve konumlandırma, alt ve sola 10px değiştirdik*/
+#logo{
+    width: 400px;
+    height: 400px;
+    border-style: none;
+    border-width: 1px;
+    border-radius: 15px;
+}
+#logo img{
+    border-radius: 15px;
+}
+#vesika{
+    width: 400px;
+}
+.icmetin{
+    font-size: 20px; 
+    margin: 0 15px;
+    font-family: Nunito;
+    text-align: justify; /*metindeki kelimeler arası boşluk*/
+    text-indent: 1em;
+}
+
+#yanmenu{
+    display: flex;
+    justify-content: space-around; /* öğeleri eşit aralıklarla yerleştirir*/
+    border-style: dotted;
+    border-width: 1px;
+    background-color: rgb(205, 182, 182);
+    padding: 25px;
+}
+.yetenek{
+    font-size: 18px;
+}
+#yanmenu h3{
+    border-bottom: 1px solid #F8F9F9;
+    margin-bottom: 15px;
+    padding-bottom: 5px;
+}
+.liste{
+    font-size: 14px;
+}
+.dil{
+    font-size: 18px;
+}
+.ingilizce{
+    font-size: 15px;
+}
+
+/* ALT MENÜ */
+#altmenu{
+    width: 100%;
+    height:60px;
+    border-style: dotted;
+    border-width: 1px;
+    background-color: lightblue;
+    color: black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#altmenu a{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 10px;
+    font-weight: bolder;
+    color: black;
+}
+
+
+.egitim {
+    text-align: center;
+    margin: auto;
+    background-color: whitesmoke;
+    padding-bottom: 50px;
+}
+
+th, td {
+    border: 1px solid ;
+    padding: 20px;
+    border-color: whitesmoke;
+    background-color: lightblue;
+}
+
+#flex-container{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: whitesmoke;
+}
+#flex-container h2{
+    text-align: center;
+    margin-bottom: 15px;
+}
+.flex-item{
+    border-radius: 40px;
+    flex-direction: column;
+    align-items: stretch;
+    margin: 10px;
+    font-size: 20px;
+}
+.email{
+    background-color: rgb(205, 182, 182);
+    text-align: center;
+    height: 80px;
+    line-height: 180%;
+}
+.social-media{
+    background-color: rgb(199, 231, 231);
+    text-align: center;
+    height: 150px;
+    line-height: 300%;
+}
+.location{
+    background-color: lightblue;
+    text-align: center;
+    height: 450px;
+    line-height: 300%;
+}
+
+#lin{
+    width: 45px;
+}
+
+#ins{
+    width: 45px;
+}
+#harita{
+    width: 350px;
+    height: 350px;
+    border-style: none;
+    border-width: 1px;
+    position: relative; /*resim üzerine metin eklediğim için*/
+    text-align: center;
+}
+
+.hakkımda {
+    margin: 20px;
+    padding: 20px;
+    border: 4px solid lightblue;
+    background-color: whitesmoke;
+    text-indent: 1em;
+
+}
+  
+.veri {
+    margin: 20px;
+    padding: 20px;
+    background-size: 950px;
+    background-repeat: no-repeat;
+    border: 4px solid lightblue;
+    background-color: whitesmoke;
+    text-indent: 1em;
+
+}
+.veri img{
+    object-fit: cover;  /*resmin uygunluğunu ayarlar*/
+    width: 100%;
+    border-radius: 5px;
+}
+.veri p{
+    padding: 5px;
+    text-indent: 15px;
+}
+
+.content{
+    background-color: #F2F3F4;
+}
+.container {
+    padding: 0 25px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-wrap: wrap; /*sınırlı genişlikte öğelerin taşmasını önler*/
+}
+
+
+.flex-kutusu {
+    border: 4px solid lightblue;
+    padding: 15px;
+    margin: 15px;
+    width: 170px;
+    height: 130px;
+    text-align: center;
+}
+
+.flex-kutusu img {
+    width: 175px;
+    height: 130px;
+    text-align: center;
+}
+
+.flex-kutusu2 {
+    border: 2px solid lightblue;
+    padding: 15px;
+    width: 170px;
+    height: 150px;
+    text-align: center;
+    top: 20px;
+}
+
+.flex-kutusu2 img {
+    width: 150px;
+    height: 150px;
+    text-align: center;
+}
+
+.enalt{
+    position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+}
+
+
+/* slider */
+.wrap,
+#slider,
+.slide-content {
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+}
+.wrap{
+    position: relative
+}
+.slide{
+    position: relative;
+    margin: 0 20px;
+}
+.slide img{
+    object-fit: cover;
+    height: 400px;
+    width: 100%;
+    cursor: pointer;
+}
+.slide-content{
+    position: absolute;
+    bottom: 0;
+    height: 75px;
+    font-size: 14px;
+    overflow: hidden;
+    background-color: rgba(210, 218, 210, 0.644);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.arrow{
+    cursor: pointer;
+    height: 0;
+    width: 0;
+    border-style: solid;
+    position: absolute;
+    top: 50%;
+    margin-top: -35px;
+    z-index: 9999;
+}
+#arrow-left{
+    border-width: 20px 30px 20px 0;
+    border-color: transparent #fff transparent #fff;
+    left: 0;
+    margin-left: 30px;
+}
+#arrow-right{
+    border-width: 20px 0 20px 30px;
+    border-color: transparent #fff transparent #fff;
+    right: 0;
+    margin-right: 30px;
+}
+.btn-back{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+}
+.btn{
+    width: 150px;
+    background-color: #CDB6B6;
+    padding: 10px;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    cursor: pointer;
+}
+
+
+/* animation */
+@keyframes slideFromRight {
+    0% {
+      opacity: 0;
+      transform: translateX(100%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0%);
+    }
+}
+  
+.animate-right img {
+    animation: slideFromRight 0.5s ease-in-out;
+}
+
+@keyframes slideFromLeft {
+    0% {
+      opacity: 0;
+      transform: translateX(-100%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0%);
+    }
+}
+  
+.animate-left img {
+    animation: slideFromLeft 0.5s ease-in-out;
+}
+  

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  <!--farklı cihazlarda nasıl ölçekleneceğini kontrol edip sayfa genişliğinin cihaza uymasını ve başlangıç zoom seviyesini 1'e ayarlamasını sağladım-->
+    <title>Black Mode</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            width: 150px;
+        }
+        h1{
+            font-size: 18px;
+            text-align: center;
+        }
+        div{
+            text-align: center;
+        }
+        .toggleButton {
+            padding: 5px 10px;
+            font-size: 14px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;      
+            width: 80px;  
+        }
+        .toggleButton.off {
+            background-color: #f44336;
+        }
+    </style>  <!--cursor pointer düğmenin üzerine gelindiğinde imleci bir işaretçiye dönüştürür-->
+    <!--togglebutton geçiş düğmesi -->
+</head>
+<body>
+    <h1>Black Mode</h1>
+    <div><button id="toggleButton" class="toggleButton">Aktifleştir</button></div>
+    <script src="popup.js"></script>
+</body>
+</html>
