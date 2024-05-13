@@ -49,6 +49,15 @@ arrowRight.addEventListener('click', function () {
     slideRight();   //sonraki resmi görüntülemek için
 });
 
+document.addEventListener("keydown", function(event) {
+    if (event.key === "ArrowLeft") {
+        if (current === sliderImages.length - 1) { // son gorselde ise çalışıyor, ilk görsele atıyor
+            current = -1;
+        }
+        slideRight();
+    }
+});
+
 init();
 // slider functions - END -
 
